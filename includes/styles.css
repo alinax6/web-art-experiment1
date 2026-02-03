@@ -58,14 +58,14 @@
         opacity: 0.6;
     }
     to {
-        transform: translateX(100vw) scale(0.6);
+        transform: translateX(120vw) scale(0.6);
         opacity: 1;
     }
 }
 
 @keyframes flyRight {
     from {
-        transform: translateX(100vw) scale(1.2);
+        transform: translateX(120vw) scale(1.2);
         opacity: 1;
     }
     to {
@@ -115,7 +115,7 @@
 
 .bird {
     position: absolute;
-    left: 10%;
+    left: 10vh;
     top: -80vh;
     width: clamp(50px, 10vw, 100px);
     animation: flyLeft 12s linear infinite;
