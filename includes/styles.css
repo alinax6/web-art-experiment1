@@ -52,6 +52,28 @@
     background-repeat: no-repeat;
 }
 
+@keyframes flyLeft {
+    from {
+        transform: translateX(-20vw) scale(1.2);
+        opacity: 0.6;
+    }
+    to {
+        transform: translateX(120vw) scale(0.6);
+        opacity: 1;
+    }
+}
+
+@keyframes flyRight {
+    from {
+        transform: translateX(120vw) scale(1.2);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-20vw) scale(0.6);
+        opacity: 0.6;
+    }
+}
+
 #star {
     position: fixed;
     top: 50%;
@@ -59,14 +81,6 @@
     width: clamp(120px, 25vw, 250px);
     transform: translate(-50%, -50%);
     z-index: 999;
-}
-
-
-.bird {
-    position: absolute;
-    left: 10vh;
-    top: -80vh;
-    width: clamp(50px, 10vw, 100px);
 }
 
 .stars {
@@ -78,37 +92,53 @@
     z-index: 10;
 }
 
+
+
+.bird {
+    position: absolute;
+    left: 10vh;
+    top: -80vh;
+    width: clamp(50px, 10vw, 100px);
+    animation: flyLeft 12s linear infinite;
+    animation-delay: 0s;
+}
+
 .bird2 {
     position: absolute;
-    right: 10vh;
     top: 70vh;
     width: clamp(50px, 10vw, 100px);
+    animation: flyRight 12s linear infinite;
+    animation-delay: 1s;
 }
 
 .bird3 {
     position: absolute;
-    right: 30vh;
     top: 120vh;
     width: clamp(50px, 10vw, 100px);
+    animation: flyLeft 12s linear infinite;
+    animation-delay: 2s;
 }
 
 .bird4 {
     position: absolute;
-    left: 30vh;
     top: 250vh;
     width: clamp(50px, 10vw, 100px);
+    animation: flyLeft 12s linear infinite;
+    animation-delay: 3s;
 }
 
 .bird5 {
     position: absolute;
-    right: 12vh;
     top: 350vh;
     width: clamp(50px, 10vw, 100px);
+    animation: flyRight 12s linear infinite;
+    animation-delay: 4s;
 }
 
 .bird6 {
     position: absolute;
-    left: 23vh;
     top: 470vh;
     width: clamp(50px, 10vw, 100px);
+    animation: flyLeft 12s linear infinite;
+    animation-delay: 5s;
 }
